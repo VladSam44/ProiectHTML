@@ -1,0 +1,63 @@
+$primary-color: #f5f5f5;
+$secondary-color: #e6e6e6;
+$accent-color: #4a8bb6;
+$font-color: #333;
+
+
+body {
+  background-color: $primary-color;
+}
+
+form {
+  background-color: $secondary-color;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: $font-color;
+  text-align: center;
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: $font-color;
+}
+
+input,
+select,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+select option:first-child {
+  color: $accent-color;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='button'] {
+  background-color: $accent-color;
+  color: $font-color;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+input[type='button']:hover {
+  background-color: darken($accent-color, 10%);
+}
