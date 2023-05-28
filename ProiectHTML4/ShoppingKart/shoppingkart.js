@@ -5,6 +5,7 @@ const cardNumberInput = document.getElementById("card-number");
 const expiryDateInput = document.getElementById("expiry-date");
 const cvvInput = document.getElementById("cvv");
 const placeOrderBtn = document.getElementById("place-order-btn");
+const returBtn = document.getElementById("cos-returbtn");
 const cartItems = JSON.parse(sessionStorage.getItem("cart"));
 const urlParams = new URLSearchParams(window.location.search);
 const userId = urlParams.get("id");
@@ -151,3 +152,7 @@ placeOrderBtn.addEventListener("click", () => {
     alert("Selectati modalitatea de plata");
   }
 });
+
+returBtn.addEventListener("click", () => {
+window.location.href=  "/MenuPage/menupage.html?id=" + userId + "&username=" + username;
+})

@@ -10,6 +10,18 @@ h1 {
   text-align: center;
 }
 
+#adresa {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#adresa option[disabled] {
+  display: none;
+}
+#adresa option {
+  background-color: lightgray;
+}
+
 #items {
   list-style-type: none;
   padding: 0;
@@ -27,9 +39,10 @@ h1 {
 
 #total {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   font-weight: bold;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-top: 15px;
 }
 
 #address-form {
@@ -44,6 +57,7 @@ h1 {
 }
 
 #address-form input[type=text] {
+  width: 200px;
   padding: 5px;
   font-size: 16px;
   border: 1px solid #3d3d3d;
@@ -61,7 +75,7 @@ h1 {
 }
 
 #payment input[type=radio] {
-  margin-right: 10px;
+  margin-right: 10 px;
 }
 
 #card-form {
@@ -71,6 +85,7 @@ h1 {
 }
 
 #card-form label {
+  display: block;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -78,7 +93,7 @@ h1 {
 #card-form input[type=text] {
   padding: 5px;
   font-size: 16px;
-  border: 1px solid #3d3d3d;
+  border: 3px solid #3d3d3d;
 }
 
 #place-order-btn {
@@ -90,8 +105,21 @@ h1 {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 #place-order-btn:hover {
   background-color: #005999;
+}
+
+#cos-returbtn {
+  font-size: 16px;
+  cursor: pointer;
+  transition: none;
+  background-color: 0.2 ease-in-out;
+  margin-top: 20px;
+  border-radius: 5%;
+  padding: 10px;
+  background-color: #0077cc;
+  color: #f5f5f5;
 }/*# sourceMappingURL=shoppingkart.css.map */

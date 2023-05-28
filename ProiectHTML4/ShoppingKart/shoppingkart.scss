@@ -13,6 +13,19 @@ body {
 h1 {
   text-align: center;
 }
+#adresa {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  
+  option[disabled] {
+    display: none;
+  }
+  option {
+    background-color: lightgray;
+  }
+}
+
 
 #items {
   list-style-type: none;
@@ -31,9 +44,10 @@ h1 {
 
 #total {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   font-weight: bold;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-top: 15px;
 }
 
 #address-form {
@@ -48,6 +62,7 @@ h1 {
 }
 
 #address-form input[type="text"] {
+  width: 200px;
   padding: 5px;
   font-size: 16px;
   border: 1px solid $primary-color;
@@ -65,7 +80,7 @@ h1 {
 }
 
 #payment input[type="radio"] {
-  margin-right: 10px;
+  margin-right: 10 px;
 }
 
 #card-form {
@@ -75,6 +90,7 @@ h1 {
 }
 
 #card-form label {
+  display: block;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -82,7 +98,7 @@ h1 {
 #card-form input[type="text"] {
   padding: 5px;
   font-size: 16px;
-  border: 1px solid $primary-color;
+  border: 3px solid $primary-color;
 }
 
 #place-order-btn {
@@ -94,8 +110,20 @@ h1 {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 #place-order-btn:hover {
   background-color: darken($button-color, 10%);
+}
+#cos-returbtn {
+  font-size: 16px;
+  cursor: pointer;
+  transition: none;
+  background-color: 0.2 ease-in-out;
+  margin-top: 20px;
+  border-radius: 5%;
+  padding: 10px;
+  background-color: $button-color;
+  color: $secondary-color;
 }

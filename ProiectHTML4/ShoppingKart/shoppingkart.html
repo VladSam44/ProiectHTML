@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="shoppingkart.css">
 </head>
 <body>
-    <h1>Shopping Cart</h1>
+    <h1>Cos de cumparaturi</h1>
     <div id="items">
 
     </div>
     <div id="total">
       Total: <span id="total-amount"></span>
     </div>
+   <select id="adresa" name="adresa">
+      <option value="" disabled selected>Alege orasul</option>
+      <option value="">Bucuresti</option>
+      <option value="">Brasov</option>
+      <option value="">Constanta</option>
+      <option value="">Cluj-Napoca</option>
+    </select>
+  
+    
     <form id="address-form">
-      <label for="address">Adresa:</label>
+      <label for="address" style="width: 20px">Strada:</label>
       <input type="text" id="address" name="address">
     </form>
     <div id="payment">
@@ -35,7 +44,9 @@
       <input type="text" id="cvv" name="cvv" required pattern="[0-9]{3}" title="Please enter a 3-digit CVV code">
     </form>
     <button id="place-order-btn">Plaseaza Comanda!</button>
+    <button id="cos-returbtn">Mai adauga produse!</button>
 
-    <script src="shoppingkart.js"></script>
+    <script src="shoppingkart.js">
+    </script>
 </body>
 </html>

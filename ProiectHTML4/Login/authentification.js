@@ -1,4 +1,5 @@
 // functia logare verifica daca exista utilizatorul in local storage si seteaza un cookie care spune ca utilizatorul este logat
+
 function login() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
@@ -15,7 +16,9 @@ function login() {
     alert("Nume de utilizator sau parolă incorectă!");
   }
 }
-
+function inrg(){
+  window.location.href= "/Register/register.html"
+}
 //functie inregistrare cu validatoare
 function register() {
   function isValidEmail(email) {
@@ -74,4 +77,8 @@ function register() {
   localStorage.setItem(username, JSON.stringify(newUser));
 
   alert("Înregistrare reușită!");
+}
+
+function dejaC () {
+  window.location.href= "/Login/login.html";
 }

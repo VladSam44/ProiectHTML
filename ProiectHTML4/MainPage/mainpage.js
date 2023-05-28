@@ -22,7 +22,7 @@ userLink.addEventListener("click", () => {
 
 menuCard.addEventListener("click", function () {
   window.location.href =
-    "/Menupage/menupage.html?id=" + userId + "&username=" + username;
+    "/MenuPage/menupage.html?id=" + userId + "&username=" + username;
 });
 
 feedBackLink.addEventListener("click", function () {
