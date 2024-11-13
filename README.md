@@ -1,2 +1,2 @@
-# ProiectCuRadu
+# Proiect
 HTML
